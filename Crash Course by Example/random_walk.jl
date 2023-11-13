@@ -1,3 +1,5 @@
+# Random Walk 
+
 using Plots, Random, Measures; pyplot() 
 
 function path(n=5000)
