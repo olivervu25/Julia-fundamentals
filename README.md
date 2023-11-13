@@ -19,6 +19,8 @@ This repository is a collection of my personal learning experiences with Julia. 
 ## Resources
 
 - Book: [Statistics with Julia](https://statisticswithjulia.org/)
+<img width="100" alt="image" src="https://github.com/olivervu25/Julia-fundamentals/assets/56999718/e2e1e976-e221-4fb8-8907-f482f71b1bd1">
+
 
 ## How to Use This Repository
 
