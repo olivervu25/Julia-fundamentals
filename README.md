@@ -8,7 +8,7 @@ This repository is a collection of my personal learning experiences with Julia. 
 
 ### Contents
 
-### Crash Course by Examples
+### `Crash Course by Examples`
 This folder contains Julia code snippets and mini-projects based on Part 1 of the "Statistics with Julia" book. It's a great starting point for those new to Julia, offering practical examples and problems to understand the basics of the language, particularly in the context of statistical analysis and data handling.
 
 ### Simulation of Dynamic Models
