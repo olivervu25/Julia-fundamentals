@@ -8,7 +8,11 @@ This repository is a collection of my personal learning experiences with Julia. 
 
 ### Contents
 
-- `Crash Course by Examples`: This folder is the heart of the repository. It contains Julia code snippets and mini-projects where I've implemented popular problems and concepts. These examples are designed to give a hands-on feel for Julia's capabilities, especially in statistical analysis and data handling.
+### Crash Course by Examples
+This folder contains Julia code snippets and mini-projects based on Part 1 of the "Statistics with Julia" book. It's a great starting point for those new to Julia, offering practical examples and problems to understand the basics of the language, particularly in the context of statistical analysis and data handling.
+
+### Simulation of Dynamic Models
+This folder is inspired by Part 10 of the "Statistics with Julia" book and focuses on simulating different models using various simulation methods. Here, you'll find more advanced applications of Julia in modeling dynamic systems, showcasing the language's power and flexibility in dealing with complex simulations.
 
 ## Learning Objectives
 
@@ -16,7 +20,7 @@ This repository is a collection of my personal learning experiences with Julia. 
 - Explore Julia's powerful features for statistical analysis.
 - Implement common statistical methods and models in Julia.
 
-## Resources
+## References 
 
 - Book: [Statistics with Julia](https://statisticswithjulia.org/)
 <img width="100" alt="image" src="https://github.com/olivervu25/Julia-fundamentals/assets/56999718/e2e1e976-e221-4fb8-8907-f482f71b1bd1">
