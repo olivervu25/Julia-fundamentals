@@ -1,3 +1,9 @@
+# Derterministic Dynamical System 
+# Predator-Prey Model (Lotka-Volterra equations)
+# X1(t+1) = aX1(t)(1-X(t)) - X1(t)X2(t)
+# X2(t+1) = -cX2(t) + dX1(t)X2(t) 
+# Equilibrium : X = ((1+c)/d; (d(a-1)-a(c+1))/d) 
+
 using Plots, LaTeXStrings; pyplot() 
 
 a, c, d = 2, 1, 5
