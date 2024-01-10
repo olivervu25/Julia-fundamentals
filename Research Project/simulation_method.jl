@@ -35,7 +35,7 @@ function gillespie_ssa(model::GillespieModel)
         if a0 == 0.0
             break
         end
-    
+        
         tau = rand(Exponential(1/a0))
         t += tau
         if t > model.T
@@ -74,7 +74,6 @@ struct TauLeapModel
     x0::Array{Float64,1}            # Initial conditions
     params::Parameters              # Parameters for the model
     T::Float64                      # Simulation time
-    tau::Float64                    # Fixed time step for tau-leap
 end
 
 # struct TauLeapModel
@@ -105,15 +104,19 @@ function simulate_tau_leap(model::TauLeapModel)
 
         a0 = sum(a)
 
-        if a0 == 0.0
+        if a0 <= eps(Float64) # Using machine epsilon to check for near-zero propensities
             break
         end
 
-        num_reactions = [rand(Poisson(a_i * model.tau)) for a_i in a]
-        state_change = sum(model.nu .* num_reactions, dims=2)
-        states[end] .+= state_change[:]
+        #if a0 == 0.0
+        #    break
+        #end
 
-        t += model.tau
+        num_reactions = [rand(Poisson(a_i * 0.05)) for a_i in a]
+        state_change = model.nu * num_reactions
+        states[end] .+= state_change
+
+        t += 0.05
         if t > model.T
             break
         end
